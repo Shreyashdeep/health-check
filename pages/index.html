@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <title>Kindly fill your details</title>
+  </head>
+
+  <body class="background-radial-gradient">
+    <style>
+      .background-radial-gradient {
+        background-color: hsl(219, 43%, 17%);
+        background-image: radial-gradient(
+            650px circle at 0% 0%,
+            hsl(218, 41%, 35%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%
+          ),
+          radial-gradient(
+            1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%
+          );
+      }
+
+      #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: 110px;
+        left: 130px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: 30px;
+        right: 180px;
+        width: 200px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+
+      #card {
+        margin-top: 100px;
+        top: 7%;
+        right: 34%;
+        width: 450px;
+        margin: 100px auto;
+        text-align: center;
+        position: absolute;
+        background: hsl(0, 0%, 100%);
+        backdrop-filter: blur(30px);
+      }
+      .form-outline > input{
+        background-color: #ececec77;
+      }
+    </style>
+
+    <section class="text-center">
+      <div
+        id="radius-shape-1"
+        class="position-absolute rounded-circle shadow-5-strong"
+      ></div>
+      <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+      <div class="card mx-9 lg-12 mx-md-5 shadow-5-strong" id="card">
+        <div class="card-body px-md-5 align-left">
+          <h2 class="fw-bold mb-5">Kindly fill your details</h2>
+
+
+          
+          <form method="post" action="/register" style="text-align: left">
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Name</label>
+              <input type="text" id="form3Example1" name="name" class="form-control" placeholder="Enter your Name" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3"
+                >Email address</label
+              >
+              <input type="email" id="form3Example3"  name="email" class="form-control" placeholder="Enter your Email" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example4">Age</label>
+              <input type="number" id="form3Example4"  name="age" class="form-control" placeholder="Enter your Age" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example4">Weight</label>
+              <input type="number" id="form3Example4"  name="weight" class="form-control" placeholder="Enter your Weight" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example4">Height</label>
+              <input type="number" id="form3Example4"  name="height" class="form-control" placeholder="Enter your Height in CM." />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Previous or Existing Diseases/Conditions</label>
+              <input type="text" id="form3Example1" name="Previous_or_Existing_Diseases_Conditions" class="form-control" placeholder="Previous or Existing Diseases/Conditions" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Current Medication</label>
+              <input type="text" id="form3Example1" name="current_medication" class="form-control" placeholder="Current Medication" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Allergies</label>
+              <input type="text" id="form3Example1" name="Allergies" class="form-control" placeholder="Enter your Allergies" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Family Medical History</label>
+              <input type="text" id="form3Example1" name="Family_Medical_History" class="form-control" placeholder="Enter Family Medical History" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Symptoms</label>
+              <input type="text" id="form3Example1" name="Symptoms" class="form-control" placeholder="Enter your Current Symptoms" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Primary Care Physician Name</label>
+              <input type="text" id="form3Example1" name="Primary_Care_Physician" class="form-control" placeholder="Enter Primary Care Physician Name" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example4">Primary Care Physician Contact</label>
+              <input type="number" id="form3Example4"  name="Primary_Care_Physician_contact" class="form-control" placeholder="Enter Primary Care Physician Contact" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example4">Contact Information</label>
+              <input type="number" id="form3Example4"  name="Contact_Information" class="form-control" placeholder="Enter your, Contact Information" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example4">Emergency Contact Information</label>
+              <input type="number" id="form3Example4"  name="Emergency_Contact_Information" class="form-control" placeholder="Enter Emergency contact Information" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example1">Address:</label>
+              <textarea id="form3Example1" name="address" rows="4" class="form-control" required></textarea>
+            </div>
+
+            
+
+
+            <button type="submit" class="btn btn-primary btn-block mb-4">
+              Register
+            </button>
+          </form>
+
+
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
