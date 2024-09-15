@@ -135,8 +135,8 @@ def blog():
 def fillData():
     return render_template("index.js")
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    app.run(debug=True)
-    # app.run(host="10.2.16.96", port=5000, debug=True)
-    # serve(app, host="0.0.0.0", port=50100, threads=1)
+#     app.run(debug=True)
+#     # app.run(host="10.2.16.96", port=5000, debug=True)
+#     # serve(app, host="0.0.0.0", port=50100, threads=1)
